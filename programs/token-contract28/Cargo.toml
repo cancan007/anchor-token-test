@@ -1,0 +1,25 @@
+[package]
+name = "token-contract28"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "token_contract28"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.28.0"
+anchor-spl = "0.28.0"
+solana-program = "1.14.19"
+borsh = "^0.9.3"
+time = "=0.3.19"
+winnow="=0.4.1"
+toml_datetime="=0.6.1"
